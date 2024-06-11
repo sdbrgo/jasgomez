@@ -1,0 +1,206 @@
+/* Fonts */
+@font-face {
+   font-family: 'Higuen';
+   src: url(fonts/higuen-serif.otf) format('opentype');
+}
+
+@font-face {
+   font-family: 'Saira Condensed Reg';
+   src: url(fonts/sairacondensed-regular.ttf) format('truetype');
+}
+
+/* Universal */
+* {
+   font-family: 'Saira Condensed Reg', sans-serif;
+   color: #fff3d8;
+}
+
+/* Body */
+body {
+   background-color: #121b36;
+}
+
+#jasper_pic {
+   width: 100%;
+   z-index: 0;
+   mask-image: linear-gradient(black, transparent);
+}
+
+/* Profile */
+#profile {
+   width: 37%;
+   position: absolute;
+   margin: 0;
+   color: #fff3d8;
+   right: 12%;
+   top: -60px;
+   z-index: 1;
+}
+
+#profile h1 {
+   font-size: 170px;
+   font-family: 'Higuen', serif;
+   font-weight: 100;
+   width: 50%;
+   margin-bottom: 10%;
+}
+
+#profile h3 {
+   font-size: 26.8px;
+   font-weight: 10;
+   margin: 0;
+}
+
+/* About */
+#about {
+   width: 100%;
+   margin-top: 100px;
+}
+
+#about .label {
+   width: 335px;
+   height: 100px;
+   position: absolute;
+   text-align: center;
+   left: 140px;
+   top: 900px;
+   border-radius: 30px;
+   background-image: linear-gradient(#121b36, #6c7ea4);
+}
+
+#about .label h3 {
+   font-family: 'Higuen';
+   font-size: 70px;
+   font-weight: 100;
+   margin-top: 0px;
+   padding-top: 10px;
+}
+
+#about .desc {
+   width: 100%;
+   background-image: linear-gradient(to right, #121b36, #6c7ea4);
+}
+
+#about .desc p {
+   width: 80%;
+   text-align: justify;
+   padding: 67px;
+   margin-left: 5%;
+   font-size: 26.8px;
+   font-weight: 10;
+   text-indent: 50px;
+}
+
+#about .desc p b {
+   color: #ffe326;
+}
+
+/* Skills */
+#skills {
+   width: 100%;
+   margin-top: 120px;
+}
+
+#skills .label {
+   width: 335px;
+   height: 100px;
+   position: absolute;
+   top: 1320px;
+   right: 140px;
+   text-align: center;
+   border-radius: 30px;
+   background-image: linear-gradient(#121b36, #6c7ea4);
+}
+
+#skills .label h3 {
+   font-family: 'Higuen';
+   font-size: 70px;
+   font-weight: 100;
+   margin-top: 0px;
+   padding-top: 10px;
+}
+
+#skills .contents {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   background-image: linear-gradient(to right, #6c7ea4, #121b36);
+}
+
+#skills .contents div {
+   padding: 30px;
+   margin-top: 50px;
+   text-align: center;
+}
+
+#skills .contents div img {
+   background-color: aliceblue;
+   padding: 10px;
+   border-radius: 20px;
+}
+
+#skills .contents div p {
+   font-weight: bold;
+   font-size: 25px;
+}
+
+.skill_logo {
+   width: 70px;
+}
+
+/* Projects */
+#projects {
+   width: 100%;
+   margin-top: 120px;
+}
+
+#projects .label {
+   width: 335px;
+   height: 100px;
+   position: absolute;
+   text-align: center;
+   left: 140px;
+   top: 1740px;
+   border-radius: 30px;
+   background-image: linear-gradient(#121b36, #6c7ea4);
+}
+
+#projects .label h3 {
+   font-family: 'Higuen';
+   font-size: 70px;
+   font-weight: 100;
+   margin-top: 0px;
+   padding-top: 10px;
+}
+
+#projects .contents {
+   width: 100%;
+   background-image: linear-gradient(to right, #121b36, #6c7ea4);
+   display: flex;
+   justify-content: center;
+}
+
+#projects .contents div {
+   padding: 50px;
+   padding-bottom: 20px;
+   margin-top: 40px;
+   text-align: center;
+}
+
+#projects .contents div img {
+   width: 400px;
+   background-color: aliceblue;
+   padding: 20px;
+   border-radius: 15px;
+}
+
+#projects .contents div p {
+   font-size: 25px;
+   font-weight: bold;
+}
+
+/* Footer */
+footer {
+   text-align: center;
+   font-size: 25px;
+}
