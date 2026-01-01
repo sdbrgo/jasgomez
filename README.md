@@ -1,2 +1,7 @@
-# jasgomez
-### Jasper Gomez's online portfolio.
+# My Online Portfolio
+
+---
+
+## About
+
+(insert about)
