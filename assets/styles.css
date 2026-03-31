@@ -134,7 +134,7 @@ body {
 }
 
 #skills .contents div img {
-   width: 96px;
+   width: 75px;
    height: 75px;
    object-fit: cover;
    background-color: aliceblue;
@@ -225,8 +225,8 @@ body {
 }
 
 #projects .contents div img {
-   width: 175px;
-   height: 125px;
+   width: 250px;
+   height: 250px;
    object-fit: cover;
    background-color: aliceblue;
    padding: 20px;
