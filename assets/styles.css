@@ -188,7 +188,9 @@ body {
 }
 
 #projects .contents div img {
-   width: 400px;
+   width: 250px;
+   height: 250px;
+   object-fit: cover;
    background-color: aliceblue;
    padding: 20px;
    border-radius: 15px;
