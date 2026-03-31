@@ -134,6 +134,9 @@ body {
 }
 
 #skills .contents div img {
+   width: 25px;
+   height: 25px;
+   object-fit: cover;
    background-color: aliceblue;
    padding: 10px;
    border-radius: 20px;
