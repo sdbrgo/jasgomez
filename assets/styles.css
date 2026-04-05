@@ -20,29 +20,56 @@ body {
    background-color: #121b36;
 }
 
+/* Hero Section */
+#hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1; 
+}
+
 #jasper_pic {
    width: 100%;
    z-index: 0;
    mask-image: linear-gradient(black, transparent);
 }
 
+.hero-content-stack {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* THE OVERLAP: Pulls the text up over the image */
+    margin-top: -700px; 
+    z-index: 10; /* Ensures text is always on top */
+}
+
 /* Profile */
 #profile {
-   width: 37%;
-   position: absolute;
-   margin: 0;
-   color: #fff3d8;
-   right: 12%;
-   top: -60px;
-   z-index: 1;
+    width: 60%;
+    margin: 0;
+    color: #fff3d8;
+    top: -150px;
+    left: 25%;
+    z-index: 1;
+    position: relative;
+    text-align: center;
 }
 
 #profile h1 {
-   font-size: 170px;
+   font-size: 80px;
    font-family: 'Higuen', serif;
    font-weight: 100;
-   width: 50%;
-   margin-bottom: 10%;
+   width: 100%;
+   margin-bottom: 20px;
 }
 
 #profile h3 {
@@ -53,18 +80,19 @@ body {
 
 /* About */
 #about {
-   width: 70%;
-   margin: 100px auto 0 auto;
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    width: 45%;
+    margin-top: -100px;
+    position: relative;
+    display: flex;
+    left: 25%;
+    flex-direction: column;
+    align-items: center;
 }
 
 #about .label {
     width: 335px;
     height: 80px;
-    border-radius: 30px;
+    border-radius: 20px;
     background-image: linear-gradient(#121b36, #6c7ea4);
     
     /* Flexbox centering for the text */
@@ -87,8 +115,12 @@ body {
 
 #about .desc {
     width: 100%;
-    border-radius: 50px;
-    background-image: linear-gradient(to right, #121b36, #6c7ea4);
+    border-radius: 20px;
+    background-image: linear-gradient(
+        to right,
+        rgba(18, 27, 54, 0.4), 
+        rgba(108, 126, 164, 0.4)
+    );
     z-index: 1;          /* Keeps it behind the label */
     padding-top: 40px;   /* Adds internal space so the text doesn't sit under the label */
 }
@@ -120,7 +152,7 @@ body {
 #skills .label {
    width: 335px;
    height: 80px;
-   border-radius: 30px;
+   border-radius: 20px;
    background-image: linear-gradient(#121b36, #6c7ea4);
 
    display: flex;
@@ -145,8 +177,12 @@ body {
    justify-content: center;
    align-items: center;
 
-   border-radius: 50px;
-   background-image: linear-gradient(to right, #6c7ea4, #121b36);
+   border-radius: 20px;
+   background-image: linear-gradient(
+    to right,
+        rgba(18, 27, 54, 0.4), 
+        rgba(108, 126, 164, 0.4)
+    );
    z-index: 1;       
    padding-top: 40px;  
 }
@@ -195,7 +231,7 @@ body {
 #projects .label {
    width: 335px;
    height: 80px;
-   border-radius: 30px;
+   border-radius: 20px;
    background-image: linear-gradient(#121b36, #6c7ea4);
 
    display: flex;
@@ -217,9 +253,14 @@ body {
 
 #projects .contents {
    width: 100%;
-   background-image: linear-gradient(to right, #121b36, #6c7ea4);
+   background-image: linear-gradient(
+        to right,
+        rgba(18, 27, 54, 0.4), 
+        rgba(108, 126, 164, 0.4)
+    );
    display: flex;
    justify-content: flex-start;
+   border-radius: 20px;
 
    /* horizontal scrollbar */
    overflow-x: auto;
@@ -284,5 +325,5 @@ body {
 /* Footer */
 footer {
    text-align: center;
-   font-size: 25px;
+   font-size: 17px;
 }
